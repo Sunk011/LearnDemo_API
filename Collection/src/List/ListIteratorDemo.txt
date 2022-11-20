@@ -1,0 +1,86 @@
+public interface List<E> extends Collection<E> {
+    Iterator<E> iterator();
+    ListIterator<E> listIterator();
+    boolean add(E e);
+}
+public abstract class AbstractList<E>{
+    protected transient int modCount = 0;
+}
+public class ArrayList<E> extends AbstractList<E> implements List<E>{
+
+    public E get(int index) {
+        Objects.checkIndex(index, size);
+        return elementData(index);
+    }
+    public boolean add(E e) {
+            modCount++;
+        add(e, elementData, size);
+        return true;
+    }
+    public Iterator<E> iterator() {
+        return new Itr();
+    }
+    private class Itr implements Iterator<E> {
+    }
+    public ListIterator<E> listIterator() {
+            return new ListItr(0);
+    }
+}
+
+private class ListItr extends Itr implements ListIterator<E> {
+        ListItr(int index) {
+            super();
+            cursor = index;
+        }
+
+        public boolean hasPrevious() {
+            return cursor != 0;
+        }
+
+        public int nextIndex() {
+            return cursor;
+        }
+
+        public int previousIndex() {
+            return cursor - 1;
+        }
+
+        @SuppressWarnings("unchecked")
+        public E previous() {
+            checkForComodification();
+            int i = cursor - 1;
+            if (i < 0)
+                throw new NoSuchElementException();
+            Object[] elementData = ArrayList.this.elementData;
+            if (i >= elementData.length)
+                throw new ConcurrentModificationException();
+            cursor = i;
+            return (E) elementData[lastRet = i];
+        }
+
+        public void set(E e) {
+            if (lastRet < 0)
+                throw new IllegalStateException();
+            checkForComodification();
+
+            try {
+                ArrayList.this.set(lastRet, e);
+            } catch (IndexOutOfBoundsException ex) {
+                throw new ConcurrentModificationException();
+            }
+        }
+
+        public void add(E e) {
+            checkForComodification();
+
+            try {
+                int i = cursor;
+                ArrayList.this.add(i, e);
+                cursor = i + 1;
+                lastRet = -1;
+                expectedModCount = modCount;
+            } catch (IndexOutOfBoundsException ex) {
+                throw new ConcurrentModificationException();
+            }
+        }
+    }
