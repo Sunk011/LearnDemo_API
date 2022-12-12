@@ -25,5 +25,7 @@ public class PrintStreamDemo2 {
 
         PrintWriter pw1 = new PrintWriter(new FileWriter("IOstream\\pw.txt"), true);
         pw1.println("hello world");
+
+        pw1.close();
     }
 }

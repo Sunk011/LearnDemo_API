@@ -9,7 +9,7 @@ public class ObjectInputStreamDemo1 {
         ObjectInputStream ois= new ObjectInputStream(new FileInputStream("IOstream\\os.txt"));
         Object obj = ois.readObject();
         Student s= (Student) obj;
-        System.out.println(s.toString());
+        System.out.println(s.getName()+"--"+s.getAge());
         ois.close();
     }
 }

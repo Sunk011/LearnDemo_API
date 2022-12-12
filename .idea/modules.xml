@@ -5,7 +5,19 @@
       <module fileurl="file://$PROJECT_DIR$/APIs.iml" filepath="$PROJECT_DIR$/APIs.iml" />
       <module fileurl="file://$PROJECT_DIR$/APi/APi.iml" filepath="$PROJECT_DIR$/APi/APi.iml" />
       <module fileurl="file://$PROJECT_DIR$/Collection/Collection.iml" filepath="$PROJECT_DIR$/Collection/Collection.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FunctionInterface/FunctionInterface.iml" filepath="$PROJECT_DIR$/FunctionInterface/FunctionInterface.iml" />
       <module fileurl="file://$PROJECT_DIR$/IOstream/IOstream.iml" filepath="$PROJECT_DIR$/IOstream/IOstream.iml" />
+      <module fileurl="file://$PROJECT_DIR$/InterFaceDemo/InterFaceDemo.iml" filepath="$PROJECT_DIR$/InterFaceDemo/InterFaceDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LambdaExepress/LambdaExepress.iml" filepath="$PROJECT_DIR$/LambdaExepress/LambdaExepress.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MethodReference/MethodReference.iml" filepath="$PROJECT_DIR$/MethodReference/MethodReference.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Network/Network.iml" filepath="$PROJECT_DIR$/Network/Network.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Reflection/Reflection.iml" filepath="$PROJECT_DIR$/Reflection/Reflection.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Stream/Stream.iml" filepath="$PROJECT_DIR$/Stream/Stream.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SwingDemo/SwingDemo.iml" filepath="$PROJECT_DIR$/SwingDemo/SwingDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Threas/ThreadDemo.iml" filepath="$PROJECT_DIR$/Threas/ThreadDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ThreadTest/ThreadTest.iml" filepath="$PROJECT_DIR$/ThreadTest/ThreadTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myOne/myOne.iml" filepath="$PROJECT_DIR$/myOne/myOne.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myTwo/myTwo.iml" filepath="$PROJECT_DIR$/myTwo/myTwo.iml" />
     </modules>
   </component>
 </project>

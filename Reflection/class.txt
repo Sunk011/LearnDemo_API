@@ -1,0 +1,2 @@
+className=Exercise.Teacher
+methodName=teach
